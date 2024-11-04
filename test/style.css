@@ -1,0 +1,26 @@
+body {
+    font-family: Inter;
+}
+
+#TicTacToeRedirBtn, #SnakeRedirBtn, #TetrisRedirBtn, #resetButton {
+    border-radius: 5px;
+    border: none;
+}
+
+#TicTacToeRedirBtn:hover, #SnakeRedirBtn:hover, #TetrisRedirBtn:hover, #resetButton:hover {
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    justify-content: center;
+}
+
+.grid-item {
+    border: 1px solid black;
+    padding: 40px;
+    font-size: 50px;
+    height: 57px;
+    width: 40px;
+}
