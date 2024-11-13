@@ -1,21 +1,21 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/test/fonts/inter/web/inter.css">
         <script src="script.js"></script>
-        <link href='/test/fonts/inter/web/inter.css' rel='stylesheet'>
     </head>
     <body>
         <div>
-            <h1 style="text-align: center; margin: 3; padding-top: 100px;">Minigames</h1>
+            <h1 id="minigamesLabel" style="text-align: center; margin: 3; padding-top: 100px;">Minigames</h1>
         </div>
         <div style="text-align: center;">
-            <button id="TicTacToeRedirBtn" style="padding: 5px; font-family: Inter;" onclick="window.location.href='/index.html'">TicTacToe</button>
-            <button id="SnakeRedirBtn" style="padding: 5px; font-family: Inter;" onclick="window.location.href='/snake/index.html'">Snake</button>
-            <button id="TetrisRedirBtn" style="padding: 5px; font-family: Inter;" onclick="window.location.href='/tetris/index.html'">Tetris</button>
+            <button class="buttons1" id="TicTacToeRedirBtn" style="padding: 5px;" onclick="window.location.href='/index.html'">TicTacToe</button>
+            <button class="buttons1" id="SnakeRedirBtn" style="padding: 5px;" onclick="window.location.href='/snake/index.html'">Snake</button>
+            <button class="buttons1" id="TetrisRedirBtn" style="padding: 5px;" onclick="window.location.href='/tetris/index.html'">Tetris</button>
         </div>
-            <div style="text-align: center; padding-top: 150px;">
-                <label id="currentlyPlaying" style="font-size: 23px; font-family: Inter;">Currently Playing: O</label>
-                <button id="resetButton" onclick="resetEverything();" style="margin-left: 3px; padding: 5px; font-family: Inter;">Reset</button>
+            <div style="text-align: center; padding-top: 150px; padding-bottom: 5px;">
+                <label id="currentlyPlaying" style="font-size: 23px; font-family: Inter, sans-serif;">Currently Playing: O</label>
+                <button class="buttons1" id="resetButton" onclick="resetEverything();" style="margin-left: 3px; padding: 5px; font-family: Inter, sans-serif;">Reset</button>
             </div>
             <div class="grid-container">
                 <div onclick="playXandO(this);" id="grid1" class="grid-item"></div>
@@ -27,6 +27,9 @@
                 <div onclick="playXandO(this);" id="grid7" class="grid-item"></div>
                 <div onclick="playXandO(this);" id="grid8" class="grid-item"></div>
                 <div onclick="playXandO(this);" id="grid9" class="grid-item"></div>
+        </div>
+        <div style="text-align: center; padding-top: 10px; visibility: hidden; font-family: 'Inter', sans-serif;">
+            <label id="press2PlayAgain">Reset to Play Again</label>
         </div>
     </body>
 </html>
